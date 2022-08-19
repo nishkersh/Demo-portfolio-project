@@ -1,0 +1,368 @@
+@import
+url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Poppins:wght@500&display=swap"); 
+ *{ 
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box; 
+ text-align: center; 
+ text-shadow: rgb(106, 0, 255) 1px 0 10px; 
+ text-size-adjust: auto; 
+ text-decoration: none; 
+} 
+body{ 
+ color: white; 
+ cursor: url(normal_select.cur), auto; 
+ min-height: 90vh; 
+ } 
+ #particle-js{ 
+ width: 100%; 
+ height:max-content; 
+ transform: translate(-50%, -50%); 
+ } 
+.max-width{ 
+max-width:1500px ; 
+padding: 0 80px; 
+margin: auto; 
+} 
+/* navbar styling */
+.navbar{ 
+ position: fixed; 
+ width: 100%; 
+ height: 12%; 
+ transition: all 0.3s ease; 
+} 
+.navbar.sticky{ 
+padding:15px 0 ; 
+background-color: rgb(9, 137, 234) 
+} 
+.navbar .max-width{ 
+ margin: 10px; 
+ padding: 10px; 
+ display:flex; 
+ align-items:flex-end; 
+ justify-content:space-between; 
+} 
+.navbar .menu{ 
+ transition: color 0.3s ease-in-out; 
+} 
+.navbar .logo a{ 
+ color:white; 
+ font-size: 55px; 
+ font-weight: 50%; 
+ margin-left: 20px; 
+} 
+.navbar .logo a span{ 
+ color:rgb(8, 239, 143) ; 
+} 
+.navbar .menu li{ 
+ display: inline-block; 
+} 
+.navbar .menu li a { 
+ color: white; 
+ padding: 20px; 
+ margin-right:0px; 
+ font-size: 25px; 
+ font-weight: 25%; 
+ transition: color 0.3s ease-in-out; 
+ cursor: url(link_select.cur), pointer; 
+ } 
+.navbar .menu li a:hover{ 
+ color: rgb(5, 235, 212); 
+ text-shadow: rgb(75, 239, 5); 
+} 
+/* home section styling */
+.home{ 
+ display: flex; 
+ background : url("wallpaperflare.com_wallpaper.jpg") no-repeat center ; 
+background-size: cover; 
+height: 120vh; 
+min-height: 400px; 
+} 
+.home-content{ 
+ color: white; 
+ font-size: 30px; 
+ font-weight: 500; 
+ margin-left:-400px ; 
+} 
+.home .home-content .text-1 { 
+ font-size:40px; 
+ text-align: left; 
+} 
+.text-2 { 
+ text-align: left; 
+} 
+.text-2 span{ 
+ font-size: 50px; 
+ color: rgb(8, 239, 143); 
+ text-align: left; 
+} 
+#change{ 
+ color: rgb(8, 239, 143); 
+ font-weight: 300; 
+ font-size: 40px; 
+} 
+.home .home-content .text-4 { 
+ color: rgb(8, 239, 143); 
+ font-weight: 300; 
+ font-size: 60px; 
+ margin-left: 20px; 
+ text-align: left; 
+} 
+/* menu button styling */
+.menu-btn{ 
+ color: white; 
+ font-size: 30px; 
+ font-weight: 500; 
+margin-right:-100px; 
+cursor: pointer; 
+display:contents; 
+} 
+.menu-btn :hover{ 
+color: rgb(5, 235, 212); 
+ text-shadow: rgb(75, 239, 5); 
+} 
+/* icon styling */
+.icons ul { 
+ margin: 0; 
+ padding: 0; 
+ display: flex; 
+ position: absolute; 
+ top: 80%; 
+ left: 30%; 
+transform: translate(-50%, -50%); 
+} 
+.icons ul li { 
+ list-style: none; 
+ margin: 0 15px; 
+} 
+.icons ul li a { 
+ position: relative; 
+ display: block; 
+ width: 60px; 
+ height: 60px; 
+ text-align: center; 
+ line-height: 63px; 
+ background: rgb(255, 255, 255); 
+ border-radius: 50%; 
+ font-size: 30px; 
+ color: rgb(29, 52, 204); 
+ transition: .5s; 
+ cursor: url(link_select.cur), pointer; 
+} 
+.icons ul li a::before { 
+ content: ''; 
+ position: absolute; 
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ height: 100%; 
+ border-radius: 50%; 
+ background: #26edf0; 
+ transition: .5s; 
+ transform: scale(.9); 
+ z-index: -1; 
+} 
+.icons ul li a:hover::before { 
+ transform: scale(1.1); 
+ box-shadow: 0 0 15px #06c2db; 
+} 
+.icons ul li a:hover { 
+ color: #15d8ee; 
+ box-shadow: 0 0 5px #15d8ee; 
+ text-shadow: 0 0 5px #15d8ee; 
+} 
+/* about section styling */
+.about{ 
+ display: flex; 
+background : url("about.wallpaperflare.com_wallpaper.jpg") no-repeat center ; 
+background-size: cover; 
+height: 120vh; 
+min-height: 400px; 
+} 
+.column-right{ 
+font-size: 30px; 
+padding: 25px; 
+font-weight: 600; 
+margin-top: 10px; 
+margin-left: 500px; 
+text-align: justify; 
+} 
+.column-right-center{ 
+ font-size: 30px; 
+ padding: 25px; 
+ font-weight: 600; 
+ margin-top: 10px; 
+ margin-left: 800px; 
+ text-align: justify; 
+} 
+#resume { 
+ display: inline-block; 
+ color: rgb(63, 255, 50); 
+ text-shadow: #05deff; 
+ border:2px solid rgb(250, 250, 250); 
+ border-radius: 6px; 
+ padding: 20px; 
+ margin-left:800px; 
+ font-size:40px; 
+ font-weight: 25%; 
+ transition: color 0.3s ease-in-out; 
+cursor:url(link_select.cur), pointer; 
+ } 
+#resume:hover { 
+ color: red; 
+ } 
+ /* skills section styling */
+ .skills{ 
+ margin-bottom: 0px; 
+ display: flex; 
+ background-image: linear-gradient(rgb(24, 3, 51) , rgb(50, 8, 50) , rgb(10, 36, 56)); 
+ background : url("skill.wallpaperflare.com_wallpaper.jpg") no-repeat center ; 
+ background-size: contain; 
+ height: 120vh; 
+ min-height: 50px; 
+ } 
+.skills .max-width .title{ 
+ font-size: 75px; 
+ position: relative; 
+ top: 395px; 
+} 
+.skill-content .column-left .text{ 
+font-size: 45px; 
+font-weight: 500%; 
+position:relative; 
+top: -20px; 
+left: -500px; 
+text-align: left; 
+border-bottom-style: groove; 
+border-bottom-color: rgb(5, 210, 233); 
+border-bottom-width: 7px; 
+} 
+.skill-content .column-left p{ 
+ font-size: 30px; 
+font-weight: 300%; 
+position:relative; 
+left: -100px; 
+top:-50px ; 
+margin-left:100px ; 
+text-align: justify; 
+margin-right: 800px; 
+margin-top: 90px; 
+} 
+.skill-content .column-right .bars{ 
+ margin-bottom: 40px; 
+} 
+.skill-content .column-right .bars:hover{ 
+color: rgb(14, 212, 252); 
+text-shadow: blueviolet; 
+} 
+.skill-content .column-right .info{ 
+ font-size: 30px; 
+ display: flex; 
+ justify-content: space-between ; 
+ position: relative; 
+ top: -375px; 
+ right: -85px; 
+ margin-left: 240px; 
+} 
+.line{ 
+ height: 10px; 
+ display: flex; 
+ justify-content: space-between ; 
+ position: relative; 
+ top: -375px; 
+ right: -95px; 
+ margin-left: 270px; 
+ background:white; 
+} 
+.line::before{ 
+ content:""; 
+ position: absolute; 
+ height: 100%; 
+ left: 0; 
+ top: 0; 
+ background: #26edf0; 
+} 
+.C::before{ 
+width: 80%; 
+} 
+.CPLUS::before{ 
+ width: 90%; 
+ } 
+.C::before{ 
+width: 80%; 
+} 
+.OOPS::before{ 
+width: 90%; 
+} 
+.HTML::before{ 
+width: 95%; 
+} 
+.CSS::before{ 
+width: 65%; 
+} 
+.CN::before{ 
+width: 90%; 
+} 
+/* projects section styling */
+.projects{ 
+ display: flex; 
+background : url("projects.wallpaperflare.com_wallpaper.jpg") no-repeat center ; 
+background-size: cover; 
+height: 120vh; 
+min-height: 400px; 
+} 
+.projects .max-width .title{ 
+ font-size: 75px; 
+ position:relative; 
+ top: -375px; 
+ border-bottom-style: groove; 
+ border-bottom-color: rgb(5, 210, 233); 
+ border-bottom-width: 7px; 
+} 
+/* achievements section styling */
+.achievements{ 
+ display: flex; 
+ background: url("achievements.wallpaperflare.com_wallpaper.jpg") no-repeat center ; 
+
+background-size: cover; 
+height: 120vh; 
+min-height: 400px; 
+} 
+.achievements .max-width .title{ 
+ font-size: 75px; 
+ position: relative; 
+ top: -390px; 
+ margin-right: -220px;
+ border-bottom-style: groove; 
+ border-bottom-color: rgb(5, 210, 233); 
+ border-bottom-width: 7px; 
+} 
+/* contact section styling */
+.contact .max-width .title-contact{ 
+ font-size: 65px; 
+ position: absolute; 
+ top: 15px; 
+ margin-right: 50px; 
+ border-bottom-style: groove; 
+ border-bottom-color: rgb(5, 210, 233); 
+ border-bottom-width: 7px; 
+} 
+.contact{ 
+ display: flex; 
+background : url("contact.wallpaperflare.com_wallpaper.jpg") no-repeat center ; 
+background-size: cover; 
+height: 120vh; 
+min-height: 400px; 
+} 
+#map{ 
+ position: absolute; 
+ margin-left:350px ; 
+ margin-top: -550px; 
+ width:500px; 
+ height:350px; 
+ border: 1px; 
+} 
+#map:hover{ 
+ color: #26edf0; 
+ background-color: aqua; 
+} 
